@@ -17,15 +17,27 @@ class BusyBuzzViewController: UIViewController {
     }
     
     @IBAction func imaBoyButtonTapped(sender: UIButton) {
-        print("Let's get started roger!!")
-        let busyBuzzBoyViewController = BusyBuzzBoyViewController()
-        present(busyBuzzBoyViewController, animated: true, completion: nil)
+        if let buttonTextLable = sender.titleLabel?.text {
+            print(buttonTextLable + " tapped!  Let's get started roger!!")
+            let busyBuzzBoyViewController = BusyBuzzBoyViewController()
+            present(busyBuzzBoyViewController, animated: true, completion: nil)
+        } else {
+            print("Let's get started roger!!")
+            let busyBuzzBoyViewController = BusyBuzzBoyViewController()
+            present(busyBuzzBoyViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func imaGirlButtonTapped(sender: UIButton) {
-        print("What shoes do I wear!?!?")
-        let busyBuzzGirlViewController = BusyBuzzGirlViewController()
-        present(busyBuzzGirlViewController, animated: true, completion: nil)
+        if let buttonTextLable = sender.titleLabel?.text {
+            print(buttonTextLable + " tapped!  Oh goodness! What shoes am I going to wear!?!")
+            let busyBuzzGirlViewController = BusyBuzzGirlViewController()
+            present(busyBuzzGirlViewController, animated: true, completion: nil)
+        } else {
+            print("Oh goodness! What shoes am I going to wear!?!")
+            let busyBuzzGirlViewController = BusyBuzzGirlViewController()
+            present(busyBuzzGirlViewController, animated: true, completion: nil)
+        }
     }
     
 }
