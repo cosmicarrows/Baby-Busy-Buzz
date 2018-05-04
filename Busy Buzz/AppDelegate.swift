@@ -13,12 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var busyBuzzViewController: BusyBuzz?
+    var busyBuzzViewController: BusyBuzzViewController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
-        let busyBuzzViewController = BusyBuzz()
+        let busyBuzzViewController = BusyBuzzViewController()
+        
+        window?.backgroundColor = UIColor.purple
         
         window?.rootViewController = busyBuzzViewController
         

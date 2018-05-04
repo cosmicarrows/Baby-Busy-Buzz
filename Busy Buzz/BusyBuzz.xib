@@ -10,7 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyBuzz" customModule="Busy_Buzz" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyBuzzViewController" customModule="Busy_Buzz" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Z09-29-wIc" id="iYa-Iz-HFe"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="Z09-29-wIc">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -28,6 +32,9 @@
                     <state key="normal" title="I'M A GIRL!">
                         <color key="titleColor" red="0.96844286603482799" green="1" blue="0.96531786449278156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="imaGirlButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="XUX-EW-fAy"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6n-zj-5CG">
                     <rect key="frame" x="16" y="415" width="343" height="100"/>
@@ -37,6 +44,9 @@
                     <state key="normal" title="YEP.I'M A BOY.">
                         <color key="titleColor" red="0.96844286599999996" green="1" blue="0.96531786450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="imaBoyButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="rCF-DI-ebw"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-iP-ovo">
                     <rect key="frame" x="24" y="270" width="78" height="73"/>

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class busyBuzzBoyViewController: UIViewController {
+class BusyBuzzBoyViewController: UIViewController {
     
     override var nibName: String? {
         return "BusyBuzzBoyViewController"
