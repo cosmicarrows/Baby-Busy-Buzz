@@ -12,6 +12,12 @@
 		26F76564209D08950097A9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F76562209D08950097A9F0 /* Main.storyboard */; };
 		26F76566209D089D0097A9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F76565209D089D0097A9F0 /* Assets.xcassets */; };
 		26F76569209D089D0097A9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F76567209D089D0097A9F0 /* LaunchScreen.storyboard */; };
+		26F76571209D08D50097A9F0 /* BusyBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F76570209D08D50097A9F0 /* BusyBuzzViewController.swift */; };
+		26F76575209D091B0097A9F0 /* BusyBuzz.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F76574209D091B0097A9F0 /* BusyBuzz.xib */; };
+		26F76577209D0B9B0097A9F0 /* BusyBuzzGirlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F76576209D0B9B0097A9F0 /* BusyBuzzGirlViewController.swift */; };
+		26F76579209D0BAD0097A9F0 /* BusyBuzzBoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F76578209D0BAD0097A9F0 /* BusyBuzzBoyViewController.swift */; };
+		26F7657B209D0C170097A9F0 /* BusyBuzzGirlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F7657A209D0C170097A9F0 /* BusyBuzzGirlViewController.xib */; };
+		26F7657D209D0C270097A9F0 /* BusyBuzzBoyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F7657C209D0C270097A9F0 /* BusyBuzzBoyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		26F76565209D089D0097A9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26F76568209D089D0097A9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F7656A209D089D0097A9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F76570209D08D50097A9F0 /* BusyBuzzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBuzzViewController.swift; sourceTree = "<group>"; };
+		26F76574209D091B0097A9F0 /* BusyBuzz.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyBuzz.xib; sourceTree = "<group>"; };
+		26F76576209D0B9B0097A9F0 /* BusyBuzzGirlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBuzzGirlViewController.swift; sourceTree = "<group>"; };
+		26F76578209D0BAD0097A9F0 /* BusyBuzzBoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBuzzBoyViewController.swift; sourceTree = "<group>"; };
+		26F7657A209D0C170097A9F0 /* BusyBuzzGirlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyBuzzGirlViewController.xib; sourceTree = "<group>"; };
+		26F7657C209D0C270097A9F0 /* BusyBuzzBoyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyBuzzBoyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				26F76565209D089D0097A9F0 /* Assets.xcassets */,
 				26F76567209D089D0097A9F0 /* LaunchScreen.storyboard */,
 				26F7656A209D089D0097A9F0 /* Info.plist */,
+				26F76570209D08D50097A9F0 /* BusyBuzzViewController.swift */,
+				26F76574209D091B0097A9F0 /* BusyBuzz.xib */,
+				26F76576209D0B9B0097A9F0 /* BusyBuzzGirlViewController.swift */,
+				26F7657A209D0C170097A9F0 /* BusyBuzzGirlViewController.xib */,
+				26F76578209D0BAD0097A9F0 /* BusyBuzzBoyViewController.swift */,
+				26F7657C209D0C270097A9F0 /* BusyBuzzBoyViewController.xib */,
 			);
 			path = "Busy Buzz";
 			sourceTree = "<group>";
@@ -122,9 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F7657B209D0C170097A9F0 /* BusyBuzzGirlViewController.xib in Resources */,
 				26F76569209D089D0097A9F0 /* LaunchScreen.storyboard in Resources */,
 				26F76566209D089D0097A9F0 /* Assets.xcassets in Resources */,
 				26F76564209D08950097A9F0 /* Main.storyboard in Resources */,
+				26F76575209D091B0097A9F0 /* BusyBuzz.xib in Resources */,
+				26F7657D209D0C270097A9F0 /* BusyBuzzBoyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F76579209D0BAD0097A9F0 /* BusyBuzzBoyViewController.swift in Sources */,
+				26F76577209D0B9B0097A9F0 /* BusyBuzzGirlViewController.swift in Sources */,
 				26F76561209D08950097A9F0 /* ViewController.swift in Sources */,
+				26F76571209D08D50097A9F0 /* BusyBuzzViewController.swift in Sources */,
 				26F7655F209D08950097A9F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

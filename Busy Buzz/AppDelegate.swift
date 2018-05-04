@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var busyBuzzViewController: BusyBuzz?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        let busyBuzzViewController = BusyBuzz()
+        
+        window?.rootViewController = busyBuzzViewController
+        
+        self.busyBuzzViewController = busyBuzzViewController
+        
         return true
     }
 
