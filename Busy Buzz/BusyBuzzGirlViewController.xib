@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyBuzzGirlViewController" customModule="Busy_Buzz" customModuleProvider="target">
             <connections>
+                <outlet property="pokeMeButton" destination="P3Y-Bh-TlL" id="myV-v3-Vw1"/>
+                <outlet property="slider" destination="rJ0-y7-6ZT" id="DmH-4x-GXW"/>
+                <outlet property="slidersLabel" destination="Y5r-Kf-Edg" id="uTy-sP-oqD"/>
                 <outlet property="view" destination="eu5-fY-nJa" id="U7D-xU-NSe"/>
             </connections>
         </placeholder>
@@ -19,9 +22,47 @@
         <view contentMode="scaleToFill" id="eu5-fY-nJa">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rJ0-y7-6ZT">
+                    <rect key="frame" x="14" y="55" width="347" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="minimumTrackTintColor" red="0.37824936690202104" green="1" blue="0.26956157608145626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" red="0.9187708298409869" green="1" blue="0.22387623843856808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="thumbTintColor" red="0.75777554687659698" green="1" blue="0.65300502023727136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="sliderMovedWithSender:" destination="-1" eventType="valueChanged" id="xZK-VN-XNF"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peek a Boo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5r-Kf-Edg">
+                    <rect key="frame" x="16" y="109" width="343" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                    <color key="textColor" red="0.97037169440985194" green="1" blue="0.99241241804473346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3Y-Bh-TlL">
+                    <rect key="frame" x="16" y="176" width="343" height="83"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.3665098983293944" blue="0.83772269781921649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="POKE ME!">
+                                <attributes>
+                                    <color key="NSColor" red="0.97037169440985194" green="1" blue="0.99241241804473346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="36" name="CourierNewPS-BoldMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pokeMeButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="7cX-nz-8gf"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.59845676579018625" blue="0.84064617578152778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="f9m-Kk-ZWh"/>
-            <point key="canvasLocation" x="129" y="-81"/>
+            <point key="canvasLocation" x="128.5" y="-81.5"/>
         </view>
     </objects>
 </document>

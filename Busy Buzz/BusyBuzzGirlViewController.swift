@@ -12,7 +12,28 @@ import UIKit
 
 class BusyBuzzGirlViewController: UIViewController {
     
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var slidersLabel: UILabel!
+    
+    @IBOutlet weak var pokeMeButton: UIButton!
+    
     override var nibName: String? {
         return "BusyBuzzGirlViewController"
+    }
+    
+    @IBAction func sliderMoved(sender: UISlider) {
+        print(sender.value)
+        if sender.value > 0.5 {
+            slidersLabel.text = "Slide going up..."
+        } else {
+            slidersLabel.text = "Slide going down!"
+        }
+    }
+    
+    @IBAction func pokeMeButtonTapped(sender: UIButton) {
+        sender.titleLabel?.text = "🤩"
+        slidersLabel.text = "🤩"
+        
     }
 }
