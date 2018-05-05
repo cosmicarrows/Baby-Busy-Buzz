@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyBuzzGirlViewController" customModule="Busy_Buzz" customModuleProvider="target">
             <connections>
+                <outlet property="moodSwitch" destination="HnF-Zf-7Wf" id="5fc-bx-RYC"/>
                 <outlet property="pokeMeButton" destination="P3Y-Bh-TlL" id="myV-v3-Vw1"/>
                 <outlet property="slider" destination="rJ0-y7-6ZT" id="DmH-4x-GXW"/>
                 <outlet property="slidersLabel" destination="Y5r-Kf-Edg" id="uTy-sP-oqD"/>
@@ -59,6 +60,13 @@
                         <action selector="pokeMeButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="7cX-nz-8gf"/>
                     </connections>
                 </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnF-Zf-7Wf">
+                    <rect key="frame" x="163" y="521" width="49" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="moodSwitchPressedWithSender:" destination="-1" eventType="valueChanged" id="XfN-ul-P19"/>
+                    </connections>
+                </switch>
             </subviews>
             <color key="backgroundColor" red="1" green="0.59845676579018625" blue="0.84064617578152778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="f9m-Kk-ZWh"/>
